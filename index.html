@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Турагенція "Мрія"</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="hero">
+        <div class="overlay">
+            <h1 class="Title1">Турагенція "Мрія"</h1>
+            <p>Мандруйте світом разом із нами</p>
+            <a href="#destinations" class="btn">Дізнатись більше</a>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">Про нас</a></li>
+            <li><a href="#destinations">Напрямки</a></li>
+            <li><a href="#contact">Контакти</a></li>
+        </ul>
+    </nav>
+
+    <section id="about" class="container">
+        <h2>Про нас</h2>
+        <p>Турагенція "Мрія" організовує найкращі тури в різні куточки світу. Наша місія — дарувати незабутні емоції та враження.</p>
+    </section>
+
+    <section id="destinations" class="container">
+        <h2>Популярні напрямки</h2>
+        <div class="destination-grid">
+            <div class="destination" onclick="showDetails('Париж')">
+                <img src="https://media.timeout.com/images/106181719/1536/1152/image.webp" alt="Париж">
+                <h3>Париж, Франція</h3>
+            </div>
+            <div class="destination" onclick="showDetails('Балі')">
+                <img src="https://idsb.tmgrup.com.tr/ly/uploads/images/2024/03/25/thumbs/800x531/320999.jpg?v=1711368787" alt="Балі">
+                <h3>Балі, Індонезія</h3>
+            </div>
+            <div class="destination" onclick="showDetails('Київ')">
+                <img src="https://www.rbc.ua/static/img/k/i/kiev_skyline_beautiful_fiery_sunset_ukraine_monument_motherland_1200x675.jpg" alt="Київ">
+                <h3>Київ, Україна</h3>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container">
+        <h2>Контакти</h2>
+        <form id="contact-form">
+            <label for="name">Ім'я:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Повідомлення:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Відправити</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Турагенція "Мрія". Всі права захищені.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
